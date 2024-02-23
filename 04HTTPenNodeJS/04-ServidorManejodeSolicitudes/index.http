@@ -1,3 +1,5 @@
+### usando extensiones para pruebas de metodos de solicitud http Rest Client
+
 GET http://localhost:3000/ HTTP/1.1
 
 ###
@@ -5,6 +7,7 @@ GET http://localhost:3000/ HTTP/1.1
 PUT http://localhost:3000/ HTTP/1.1
 
 ###
+
 POST http://localhost:3000/cursos/programacion HTTP/1.1
 Content-Type: application/json
 

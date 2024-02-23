@@ -81,10 +81,12 @@ function manejarSolicitudPOST(req, res) {
         console.log(cuerpo); // mostramos que datos incluye cuenpo luego de la respuesta.
         console.log(typeof cuerpo); // mostramos el tipo de dato
         
-        // convertirmos esa cadena de caracteres (string) en un objeto usando JSON.parse()
-        cuerpo = JSON.parce(cuerpo); // de string a objeto.
+        // convertirmos esa cadena de caracteres (string) en un objeto de javascript usando JSON.parse()
+        cuerpo = JSON.parse(cuerpo); // de string a objeto.
         // evaluamos si se paso a un objeto.
         console.log(typeof cuerpo); // mostramos tipo de dato.
+        // entramos al valor de la propiedad titulo ya que convertimos el string a un objeto JSON.
+        console.log(cuerpo.titulo);
 
 
         res.end('Se recibio un solicitud POST para /cursos/programacion'); // mostramos la respuesta del servidor.
